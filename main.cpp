@@ -748,10 +748,16 @@ int main(int argc,char** argv)
     node[1] = 3; node[2] = 7; node[3] = 8; node[4] = 9;
 
 
-    cout << "\t\t\t\tDraw the Shape Game\n\n\n";
-    cout << "#Click on one point to another point to draw a line between them\n\n";
-    cout << "#To revert the move press \'r\' (without quotes)\n\n";
-    cout << "#Press \'S\' (without quotes) to see the solution if you get stuck\n\n";
+    cout << "\t\t\t\tConnect the Shape Game\n\n\n";
+    cout << "Rules are as follows - \n\n";
+    cout << "\t1. For each move TWO connectd points must be clicked to cover the edge between them.\n";
+    cout << "\t2. You CAN NOT go through an edge you already covered once\n";
+    cout << "\t3. As a first move, click on ANY two points connected by an edge\n";
+    cout << "\t4. Click on the point you clicked LAST and any point CONNECTED to that point\n";
+    cout << "\t5. Repeat untill ALL the edges of the shape are covered.\n";
+
+    cout << "\t6. To revert each move press \'r\' (without quotes)\n";
+    cout << "\t7. Press \'S\' (without quotes) to see the solution.\n\n";
 
     init_solution();
 	glutInit(&argc,argv);
